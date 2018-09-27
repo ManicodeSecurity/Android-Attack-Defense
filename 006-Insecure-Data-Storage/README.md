@@ -1,4 +1,9 @@
-### Task 1: Find the Creds
+# Insecure Data Storage
+Improper data storage is a massive problem in the Android ecosystem. These labs will cover how to exploit some common flaws around data storage locations.
+
+## Find the Credentials
+
+### Task 1: Enter Your "Creds"
 
 Open up DVIA in the emulator and navigate to `4. Insecure Data Storage - Part 2`
 
@@ -63,5 +68,34 @@ sqlite> .tables
 
 # Fetch the data
 sqlite> select * from myuser;
+```
 
 As you can see, the credentials are stored in plaintext on the device in a SQLite table.
+
+##  Find the Creds - Part 2
+
+The goal is to find out where the user-entered data is being stored and what flaw in the code led to this vulnerability. 
+
+Open up DVIA in the emulator and navigate to `4. Insecure Data Storage - Part 1`
+
+### Task 1: Enter Some Dummy Creds
+
+Enter some data into the text fields of the application (such as ADMIN / ADMIN) Click “SAVE” button to save the data in the emulator app.
+
+### Task 2: Find the Flaw
+
+To better understand where the app is storing the data, open up “InsecureDataStorage1Activity.class” file using JD-GUI. The source code reveals that the app is using `SharedPreferences` to store the user entered sensitive data.
+
+### Task 3: Use adb to Connect to the Emulator
+
+Similar to the previous task of this lab, we will use `adb` to connect to our emulator:
+
+```
+./adb shell
+```
+
+This will drop us into our emulator and we can begin exploring the filesystem.
+
+### Challenge
+
+Can you find the credentials you entered in the `shared_prefs` file?

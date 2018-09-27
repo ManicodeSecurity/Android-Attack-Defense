@@ -16,7 +16,6 @@ Were you able to find anything of interest when running strings?
 
 Open up DVIA in the emulator and navigate to `2. Hardcoding Issues - Part 1`
 
-Enter a value in the vendor key input box and observe what happens.
+Enter a value in the vendor key input box and observe what happens. 
 
-### Challenge
-Using our decompiled application in JD-GUI, can you find where the hardcoded credentials for the vendor key is are located?
+Using our decompiled application in JD-GUI, can you find where the hardcoded credentials for the vendor key are located and what line of code is responsible for the issue?
