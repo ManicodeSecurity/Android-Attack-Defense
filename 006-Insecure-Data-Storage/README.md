@@ -74,7 +74,7 @@ As you can see, the credentials are stored in plaintext on the device in a SQLit
 
 ##  Find the Creds - Part 2
 
-The goal is to find out where the user-entered data is being stored and what flaw in the code led to this vulnerability. 
+The goal is to see how attackers can retrieve user-entered data that is being stored in SharedPreferences and what flaw in the code may lead to this vulnerability. 
 
 Open up DVIA in the emulator and navigate to `4. Insecure Data Storage - Part 1`
 

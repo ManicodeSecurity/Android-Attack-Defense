@@ -75,12 +75,12 @@ The output should look like this:
 
 ![Emulator](../images/emulator.png?raw=true "Emulator")
 
-### Task 3: Santoku Linux Setup
+### Task 4: Santoku Linux Setup
 [Santoku Linux](https://santoku-linux.com/) is an open-source virtual machine that comes pre-installed with a number of useful tools needed for mobile security testing, malware analysis, and mobile forensics. 
 
 If you have not already downloaded and installed the.ISO file into VirtualBox, please do so now. 
 
-### Setup Guest Additions
+### Task 5: Setup Guest Additions
 
 Guest Additions  allows for improved graphic performance, shared folders, and other features within the Santoku VM.
 
@@ -95,7 +95,7 @@ sudo sh VBoxLinuxAdditions.run
 
 If you need additional assistance with the setup, check out the in the official [Santoku Linux Documentation](https://santoku-linux.com/howto/installing-santoku/installing-santoku-in-a-virtual-machine/).
 
-### Task 5: Install Docker in the VM
+### Task 6: Install Docker in the VM
 We will need to use [Docker](https://www.docker.com/) to run some tools in our VM. Below is how we install it in Santoku Ubuntu VM. Run the following commands in a new terminal in the Santoku VM:
 
 
@@ -127,7 +127,7 @@ Ensure Docker is installed and running:
 sudo docker images
 ```
 
-### Task 6: Clone This Repo in the VM
+### Task 7: Clone This Repo in the VM
 
 To avoid setting up shared folders in VirtualBox, we will just simply clone the repo in the Santoku VM. Open a terminal in the VM and run the following commands:
 
