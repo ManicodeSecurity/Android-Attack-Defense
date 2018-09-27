@@ -30,5 +30,9 @@ cp /path/to/001-Lab-Setup/DIVA-Android/diva-beta.apk ~/Desktop
 unzip diva-beta.apk -d DIVA
 ```
 
+Browse the contents of the unzipped apk.
+
+### Task 3: Unzip the Additional APKs
+In the `/other_apps` directory, you will find a few older APKs. Unzip them and see if you can find anything interesting. Note - these are chosen at random and may or may not have issues or vulnerabilities. 
 
 
