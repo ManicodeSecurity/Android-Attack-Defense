@@ -13,11 +13,11 @@ git clone https://github.com/ManicodeSecurity/Android-Attack-Defense
 ```
 
 ### Task 2: Run DIVA in Android Emulator
-[Damn Insecure and Vulnerable App (for Android)](https://github.com/payatu/diva-android) is an intentionally insecure Android application built to help students and researchers learn about Android security in a legal environment. It was built by [payatu](https://github.com/payatu) as free and open source software. We will use DIVA extensively throughout the course. 
+[Damn Insecure and Vulnerable App (for Android)](https://github.com/payatu/diva-android) is an intentionally insecure Android application built to help students and researchers learn about Android security in a legal environment. It was built by [payatu](https://github.com/payatu) as free and open source software. We will use DIVA extensively throughout the course.
 
 The APK can be found in the `DIVA-Android` directory.
 
-We will first load the `.apk` file using the command-line utility, `adb`. There are other ways to load the app into our device such as drag-and-drop but as we will see, `adb` is a very useful tool for analyzing Android applications from an attacker's perspective. 
+We will first load the `.apk` file using the command-line utility, `adb`. There are other ways to load the app into our device such as drag-and-drop but as we will see, `adb` is a very useful tool for analyzing Android applications from an attacker's perspective.
 
 1. Create a new Android Virtual Device (AVD)
 Open up Android Studio and click `Tools` then `AVD Manager`:
@@ -51,7 +51,7 @@ When it is done downloading select Oreo with API 26 and click `Next`. On the fin
 
 We will use the built-in Android tool called Android Debug Bridge (`adb`) to load our DIVA .apk file into our emulated Pixel device.
 
-1. We first need to find where the `adb` binary is installed. If you are running OSX, `adb` can often be found in the ~/Library/Android/sdk/platform-tools` directory. 
+1. We first need to find where the `adb` binary is installed. If you are running OSX, `adb` can often be found in the ~/Library/Android/sdk/platform-tools` directory.
 
 You can use Android Studio to find out where adb is located by navigating to `Tools` -> `SDK Manager`. The local SDK path be in at the top of the screen. The `platform-tools` directory can be found in this directory:
 
@@ -61,7 +61,7 @@ You can use Android Studio to find out where adb is located by navigating to `To
 
 First, make sure the `adb` can communicate with your emulator:
 ```
-adb devices 
+adb devices
 ```
 The output should look like this:
 
@@ -76,19 +76,19 @@ The output should look like this:
 ![Emulator](../images/emulator.png?raw=true "Emulator")
 
 ### Task 4: Santoku Linux Setup
-[Santoku Linux](https://santoku-linux.com/) is an open-source virtual machine that comes pre-installed with a number of useful tools needed for mobile security testing, malware analysis, and mobile forensics. 
+[Santoku Linux](https://santoku-linux.com/) is an open-source virtual machine that comes pre-installed with a number of useful tools needed for mobile security testing, malware analysis, and mobile forensics.
 
-If you have not already downloaded and installed the.ISO file into VirtualBox, please do so now. 
+If you have not already downloaded and installed the.ISO file into VirtualBox, please do so now.
 
 ### Task 5: Setup Guest Additions
 
 Guest Additions  allows for improved graphic performance, shared folders, and other features within the Santoku VM.
 
-1. Go to Devices -> Install Guest Additions in the Virtualbox navigation bar.
-2. Next, open a Terminal window located in the VM under Applications > Accessories > Terminal (we have also created a shortcut to the Terminal window on the top status bar of the VM). 
-3. Run the following commands to complete Guest Addisons setup:
+1. Go to Devices -> Install Guest Additions in the VirtualBox navigation bar.
+2. Next, open a Terminal window located in the VM under Applications > Accessories > Terminal (we have also created a shortcut to the Terminal window on the top status bar of the VM).
+3. Run the following commands to complete Guest Additions setup:
 ```
-cd /media/VBOXADDITIONS_4.1.8_75467/
+cd /media/santoku/VBox_GAs_5.2.18/
 sudo sh VBoxLinuxAdditions.run
 ```
 4. Restart the Virtual Machine and you should be good to go.
@@ -134,9 +134,5 @@ To avoid setting up shared folders in VirtualBox, we will just simply clone the 
 ```
 cd ~/Desktop
 
-git clone https://github.com/ManicodeSecurity/iOS-Attack-Defense
+git clone https://github.com/ManicodeSecurity/Android-Attack-Defense
 ```
-
-
-
-
