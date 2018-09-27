@@ -78,11 +78,22 @@ The output should look like this:
 ### Task 3: Santoku Linux Setup
 [Santoku Linux](https://santoku-linux.com/) is an open-source virtual machine that comes pre-installed with a number of useful tools needed for mobile security testing, malware analysis, and mobile forensics. 
 
-If you have not already downloaded the .ISO file, please do so now. 
+If you have not already downloaded and installed the.ISO file into VirtualBox, please do so now. 
 
-Please follow the directions outlined in the official [Santoku Linux Documentation](https://santoku-linux.com/howto/installing-santoku/installing-santoku-in-a-virtual-machine/) to complete the setup in VirtualBox.
+### Setup Guest Additions
 
-*! Important !* Please ensure VirtualBox Guest additions is installed per the instructions.
+Guest Additions  allows for improved graphic performance, shared folders, and other features within the Santoku VM.
+
+1. Go to Devices -> Install Guest Additions in the Virtualbox navigation bar.
+2. Next, open a Terminal window located in the VM under Applications > Accessories > Terminal (we have also created a shortcut to the Terminal window on the top status bar of the VM). 
+3. Run the following commands to complete Guest Addisons setup:
+```
+cd /media/VBOXADDITIONS_4.1.8_75467/
+sudo sh VBoxLinuxAdditions.run
+```
+4. Restart the Virtual Machine and you should be good to go.
+
+If you need additional assistance with the setup, check out the in the official [Santoku Linux Documentation](https://santoku-linux.com/howto/installing-santoku/installing-santoku-in-a-virtual-machine/).
 
 ### Task 5: Install Docker in the VM
 We will need to use [Docker](https://www.docker.com/) to run some tools in our VM. Below is how we install it in Santoku Ubuntu VM. Run the following commands in a new terminal in the Santoku VM:
