@@ -84,15 +84,9 @@ If you have not already downloaded and installed the.ISO file into VirtualBox, p
 
 [VirtualBox Guest Additions](https://www.virtualbox.org/manual/ch04.html) allows for improved graphic performance, shared folders, and other features within the Santoku VM.
 
-<<<<<<< HEAD
 1. With the VM running, go to Devices -> Install Guest Additions in the VirtualBox navigation bar.
 2. Next, open a Terminal window located in the VM under Applications > Accessories > Terminal (we have also created a shortcut to the Terminal window on the top status bar of the VM). 
-3. Run the following commands to complete Guest Addisons setup:
-=======
-1. Go to Devices -> Install Guest Additions in the VirtualBox navigation bar.
-2. Next, open a Terminal window located in the VM under Applications > Accessories > Terminal (we have also created a shortcut to the Terminal window on the top status bar of the VM).
 3. Run the following commands to complete Guest Additions setup:
->>>>>>> 2a3035dc2415c953beae351d721e72c551300f7a
 ```
 cd /media/santoku/VBox_GAs_5.2.18/
 sudo sh VBoxLinuxAdditions.run
