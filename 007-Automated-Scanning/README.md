@@ -3,7 +3,11 @@ While running tools such as `strings` are very useful in our quest to understand
 
 Mobile Security Framework is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing framework capable of performing static analysis, dynamic analysis, malware analysis and web API testing. 
 
-Head over to the Santoku VM that is running and open up the terminal. MobSF has the ability to run in Docker which is what we will use for this lab. Run the following two commands in the Santoku Linux VM:
+We will be using Docker to run MobSF. If you do not already have Docker installed on your laptop feel free to use the free in-browser Docker playground called Play With Docker:
+
+[https://labs.play-with-docker.com](https://labs.play-with-docker.com)
+
+* You will need an account on Docker Hub to use Play With Docker.
 
 ```
 sudo docker pull opensecurity/mobile-security-framework-mobsf
