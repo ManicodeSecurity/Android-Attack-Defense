@@ -95,39 +95,7 @@ sudo sh VBoxLinuxAdditions.run
 
 If you need additional assistance with the setup, check out the in the official [Santoku Linux Documentation](https://santoku-linux.com/howto/installing-santoku/installing-santoku-in-a-virtual-machine/).
 
-### Task 6: Install Docker in the VM
-We will need to use [Docker](https://www.docker.com/) to run some tools in our VM. Below is how we install it in Santoku Ubuntu VM. Run the following commands in a new terminal in the Santoku VM:
-
-
-```
-sudo apt-get update
-
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-sudo apt-key fingerprint 0EBFCD88
-
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
-sudo apt-get update
-
-sudo apt-get install docker-ce
-```
-
-Ensure Docker is installed and running:
-```
-sudo docker images
-```
-
-### Task 7: Clone This Repo in the VM
+### Task 6: Clone This Repo in the VM
 
 To avoid setting up shared folders in VirtualBox, we will just simply clone the repo in the Santoku VM. Open a terminal in the VM and run the following commands:
 
