@@ -28,15 +28,15 @@ Open up Android Studio and click `Tools` then `AVD Manager`:
 
 ![Create New Device](../images/Create_New_Device.png?raw=true "Create New Device")
 
-3. We will create a Pixel device running Android Oreo. Select `Pixel` from the list of hardware:
+3. Select desired hardware. BE SURE TO CHOOSE A DEVICE THAT DOES NOT HAVE PLAY STORE ENABLED (Small logo should NOT be present):
 
 ![Pixel](../images/Pixel_Hardware.png?raw=true "Pixel Hardware")
 
-4. Now we will download `Android Oreo API 26` to run on the Pixel Emulator:
+4. Now we will download `Android Oreo API 27` to run on the Emulator:
 
 ![Oreo](../images/Oreo_API_26.png?raw=true "Oreo")
 
-When it is done downloading select Oreo with API 26 and click `Next`. On the final screen leave everything as default except for the name of the AVD. Please change it to `Manicode-Mobile-Training`:
+When it is done downloading select the appropriate API version and click `Next`. On the final screen leave everything as default except for the name of the AVD. Please change it to `Manicode-Mobile-Training`:
 
 ![AVD Name](../images/AVD-Name.png?raw=true "AVD Name")
 
